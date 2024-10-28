@@ -7,13 +7,12 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-// Global constants for user interaction
+
 const float ZOOM_FACTOR = 1.1f;
 const float CAMERA_SPEED = 0.02f;
 const float MAX_ZOOM = 50.0f;
 const float MIN_ZOOM = 10.0f;
 
-// Global variables
 float camera_angle = 0.0f;
 float camera_height = 15.0f;
 float zoom_level = 30.0f;
@@ -86,7 +85,7 @@ public:
         : CelestialBody(rad, 0, 0, 1, red, green, blue, name) {}
 
     void draw() override {
-        // Draw glow effect
+
         glPushMatrix();
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -98,7 +97,7 @@ public:
             glow_scale += 0.1f;
         }
 
-        // Draw core
+
         glColor3f(r, g, b);
         glutSolidSphere(radius, 30, 30);
 
@@ -107,7 +106,7 @@ public:
 
     }
 
-    void drawOrbit() override {} // Stars don't have orbits
+    void drawOrbit() override {} 
 };
 
 class Planet : public CelestialBody {
@@ -122,12 +121,11 @@ public:
         bool rings = false, bool atmosphere = false)
         : CelestialBody(rad, dist, orb_speed, rot_speed, red, green, blue, name, atmosphere),
         has_rings(rings) {
-        // Initialize ring color
+   
         ring_color[0] = red * 0.9f;
         ring_color[1] = green * 0.9f;
         ring_color[2] = blue * 0.9f;
 
-        // Initialize atmosphere color
         atmosphere_color[0] = red * 0.7f;
         atmosphere_color[1] = green * 0.7f;
         atmosphere_color[2] = blue * 0.7f;
@@ -136,13 +134,11 @@ public:
 
     void draw() override {
         glPushMatrix();
-
-        // Draw atmosphere if planet has one
+ 
         if (has_atmosphere) {
             drawAtmosphere();
         }
 
-        // Draw planet surface with simple shading
         glEnable(GL_LIGHTING);
         GLfloat mat_ambient[] = { r * 0.3f, g * 0.3f, b * 0.3f, 1.0f };
         GLfloat mat_diffuse[] = { r, g, b, 1.0f };
@@ -156,7 +152,6 @@ public:
 
         glutSolidSphere(radius, 30, 30);
 
-        // Draw rings if planet has them
         if (has_rings) {
             drawRings();
         }
@@ -182,7 +177,6 @@ private:
         glPushMatrix();
         glRotatef(45.0f, 1.0f, 0.0f, 0.0f);
 
-        // Draw multiple rings with varying colors
         for (float r = radius * 1.5f; r <= radius * 2.2f; r += radius * 0.1f) {
             glColor3f(ring_color[0], ring_color[1], ring_color[2]);
             glutSolidTorus(radius * 0.02f, r, 20, 40);
@@ -239,12 +233,10 @@ void drawHelp() {
 }
 
 void init() {
-    // Enable lighting and depth testing
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
 
-    // Set up light
     GLfloat light_position[] = { 0.0f, 0.0f, 0.0f, 1.0f };
     GLfloat light_ambient[] = { 0.2f, 0.2f, 0.2f, 1.0f };
     GLfloat light_diffuse[] = { 1.0f, 1.0f, 1.0f, 1.0f };
@@ -255,7 +247,6 @@ void init() {
     glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
     glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
 
-    // Create celestial bodies
     solar_system.push_back(new Star(2.0f, 1.0f, 0.7f, 0.0f, "Sun"));
     solar_system.push_back(new Planet(0.4f, 4.0f, 4.7f, 2.0f, 0.8f, 0.6f, 0.4f, "Mercury"));
     solar_system.push_back(new Planet(0.9f, 7.0f, 3.5f, 1.8f, 0.9f, 0.7f, 0.5f, "Venus", false, true));
@@ -269,12 +260,10 @@ void display() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
 
-    // Position camera
     float cam_x = sin(camera_angle) * zoom_level;
     float cam_z = cos(camera_angle) * zoom_level;
     gluLookAt(cam_x, camera_height, cam_z, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
 
-    // Draw celestial bodies
     for (auto body : solar_system) {
         glPushMatrix();
         body->drawOrbit();
