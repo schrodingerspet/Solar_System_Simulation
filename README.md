@@ -97,13 +97,6 @@ Want to make the cosmos even more amazing? Here's how:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## ⭐ Inspirations
-
-- The pioneering work of Galileo Galilei, who first turned a telescope to the night sky
-- Carl Sagan's "Cosmos," which showed us the poetry in astronomy
-- The countless nights spent stargazing that sparked this project
-- The open-source graphics community for their invaluable documentation
-
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -112,6 +105,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <p align="center">
 <img src="/api/placeholder/50/50" alt="Logo" style="border-radius: 25px"><br>
-Created with 💫 by [Your Organization]<br>
+Created with 💫 by [https://github.com/schrodingerspet]<br>
 <em>"Bringing the infinite wonders of space to your screen"</em>
 </p>
