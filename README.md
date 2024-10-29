@@ -4,8 +4,8 @@
 
 A breathtaking OpenGL-powered journey through space that brings the wonders of our solar system to life. Immerse yourself in a scientifically accurate simulation featuring pristine graphics, realistic physics, and an interactive experience that makes astronomy accessible to everyone.
 
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Solar_Sysytem_Simulation.visitor-badge&right_text=My%20Page%20Visitors)
-[![GitHub Stars](https://img.shields.io/github/stars/schrodingerspet/solar_system_simulation.svg?style=flat&label=Stars&color=brightgreen)](https://github.com/schrodingerspet/solar_system_simulation)
+[![Visitors](https://visitor-badge.glitch.me/badge?page_id=schrodingerspet.Solar_System_Simulation&left_text=Visitors)](https://github.com/schrodingerspet/Solar_System_Simulation)
+[![GitHub Stars](https://img.shields.io/github/stars/schrodingerspet/Solar_System_Simulation.svg?style=flat&label=Stars&color=brightgreen)](https://github.com/schrodingerspet/Solar_System_Simulation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat&logo=opengl)](https://www.opengl.org/)
 [![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
