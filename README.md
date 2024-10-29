@@ -1,12 +1,10 @@
 # 🌌 Solar System Simulator
 
-![Solar System Banner](/api/placeholder/1200/300)
-
 > *"Experience the majesty of our cosmic neighborhood in stunning detail"*
 
 A breathtaking OpenGL-powered journey through space that brings the wonders of our solar system to life. Immerse yourself in a scientifically accurate simulation featuring pristine graphics, realistic physics, and an interactive experience that makes astronomy accessible to everyone.
 
-[![GitHub Stars](/api/placeholder/100/20)](https://github.com/yourusername/solar-system)
+[![GitHub Stars](/api/placeholder/100/20)](https://github.com/schrodingerspet/solar_system_simulation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat&logo=opengl)](https://www.opengl.org/)
 [![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
@@ -104,7 +102,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-<img src="/api/placeholder/50/50" alt="Logo" style="border-radius: 25px"><br>
 Created with 💫 by [Aditya Akolkar](https://github.com/schrodingerspet)<br>
 <em>"Bringing the infinite wonders of space to your screen"</em>
 </p>
