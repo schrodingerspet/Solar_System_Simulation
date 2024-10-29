@@ -4,7 +4,7 @@
 
 A breathtaking OpenGL-powered journey through space that brings the wonders of our solar system to life. Immerse yourself in a scientifically accurate simulation featuring pristine graphics, realistic physics, and an interactive experience that makes astronomy accessible to everyone.
 
-[![Visitors](https://visitor-badge.glitch.me/badge?page_id=schrodingerspet.Solar_System_Simulation&left_text=Visitors)](https://github.com/schrodingerspet/Solar_System_Simulation)
+[![Profile Views](https://komarev.com/ghpvc/?username=schrodingerspet&color=brightgreen&style=flat&label=Visitors)](https://github.com/schrodingerspet/Solar_System_Simulation)
 [![GitHub Stars](https://img.shields.io/github/stars/schrodingerspet/Solar_System_Simulation.svg?style=flat&label=Stars&color=brightgreen)](https://github.com/schrodingerspet/Solar_System_Simulation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat&logo=opengl)](https://www.opengl.org/)
