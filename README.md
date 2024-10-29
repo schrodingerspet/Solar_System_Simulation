@@ -103,7 +103,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt
 ---
 
 <p align="center">
-Created with 💫 by [Aditya Akolkar](https://github.com/schrodingerspet)<br>
+Created with 💫 by <a href="https://github.com/schrodingerspet" target="_blank">Aditya Akolkar</a><br>
 <em>"Bringing the infinite wonders of space to your screen"</em>
 </p>
+
 
