@@ -105,6 +105,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <p align="center">
 <img src="/api/placeholder/50/50" alt="Logo" style="border-radius: 25px"><br>
-Created with 💫 by [https://github.com/schrodingerspet]<br>
+Created with 💫 by [Aditya Akolkar](https://github.com/schrodingerspet)<br>
 <em>"Bringing the infinite wonders of space to your screen"</em>
 </p>
+
